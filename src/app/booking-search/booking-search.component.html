@@ -1,1 +1,17 @@
-<p>booking-search works!</p>
+<form action="" class="booking-search">
+  <div class="booking-search__field">
+    <fa-icon [icon]="faLocationDot"></fa-icon>
+    <input type="text" placeholder="Выберите направление">
+  </div>
+  <div class="booking-search__field">
+    <fa-icon [icon]="faCalendarDays"></fa-icon>
+    <input type="text" placeholder="Выберите дату">
+  </div>
+  <div class="booking-search__field">
+    <fa-icon [icon]="faUser"></fa-icon>
+    <input type="text" placeholder="Выберите количество гостей">
+  </div>
+  <div class="booking-search__button">
+    <button type="submit">Забронировать</button>
+  </div>
+</form>
