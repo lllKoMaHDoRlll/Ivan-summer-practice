@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  width: 100%;
+  padding: 1.5em 3em;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+
+.header > .header__logo > img {
+  width: 160px;
+  height: auto;
+}
+
+.navigation > .navigation__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 1.2em;
+  flex-wrap: wrap;
+}
+
+
+.navigation > .navigation__list > .navigation__list__item > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--alternative-text-color);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.navigation > .navigation__list > .navigation__list__item > a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.socials > .socials__item > fa-icon {
+  font-size: 1.7rem;
+  color: var(--alternative-text-color);
+  font-weight: 900;
+}
+
+.shedule {
+  max-width: fit-content;
+  color: var(--alternative-text-color);
+  max-width: 10em;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: stretch;
+}
+
+.contacts > .contacts__item {
+  font-size: 1.5rem;
+  min-width: max-content;
+}
+
+.contacts > .contacts__item > fa-icon {
+  color: var(--secondary-text-color);
+  margin-right: .5em;
+}
+
+.contacts > .contacts__item > a {
+  text-decoration: none;
+  color: var(--alternative-text-color);
+  font-weight: 900;
+}
+
+.contacts > .contacts__book-button > button {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  background-color: var(--secondary-text-color);
+  color: var(--alternative-text-color);
+  padding: 1em;
+  border-radius: 5em;
+}
