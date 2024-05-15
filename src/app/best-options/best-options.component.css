@@ -1,0 +1,33 @@
+.best-options {
+  padding: 0 11em;
+  margin: 5em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.best-options > .best-options__title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.best-options > .best-options__title > h1 {
+  margin-bottom: .5em;
+  font-weight: 900;
+}
+
+.best-options > .best-options__content {
+  display: flex;
+  gap: 2em;
+}
+
+.best-options > .best-options__content > .best-options__content__options {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+.best-options > .best-options__content > .best-options__content__feedback-form {
+  flex: 30% 0;
+}
