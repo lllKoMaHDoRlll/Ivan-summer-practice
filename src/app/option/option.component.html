@@ -1,1 +1,18 @@
-<p>option works!</p>
+<div class="option">
+  <img [src]="image_base_filepath + option_data.image_file_name" alt="City Photo">
+  <div class="option__content">
+    <ng-container *ngIf="option_data.suggestion_type === 1; else elseTemplate">
+      <span class="option__content__suggestion suggestion suggestion--type1">
+        Мы рекомендуем!
+      </span>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <span class="option__content__suggestion suggestion suggestion--type2">
+        Цена снижена!
+      </span>
+    </ng-template>
+    <h4>
+      {{option_data.name}}
+    </h4>
+  </div>
+</div>
