@@ -1,1 +1,14 @@
-<p>city-offers-card works!</p>
+<div class="city-offers">
+  <img [src]="image_base_filepath + city_offers_data.city_photo_name" alt="City Photo">
+  <div class="city-offers__content">
+    <span class="city-offers__content__min-price">
+      от {{city_offers_data.min_offer_price}} руб.
+    </span>
+    <div class="city-offers__content__info">
+      <p class="city-offers__content__info__offers-amount">
+        <span>{{city_offers_data.offers_amount}}</span> предложений
+      </p>
+      <h4>{{city_offers_data.city_name}}</h4>
+    </div>
+  </div>
+</div>
