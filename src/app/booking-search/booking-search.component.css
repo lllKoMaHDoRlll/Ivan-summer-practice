@@ -1,0 +1,54 @@
+.booking-search {
+  width: 100%;
+  display: flex;
+  padding: 0 11em;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 3em;
+}
+
+.booking-search > .booking-search__field {
+  background-color: #FFF;
+  padding: .75em 1.25em;
+  border-radius: 5em;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+.booking-search > .booking-search__field > fa-icon {
+  color: var(--secondary-text-color);
+  margin-right: .5em;
+}
+
+.booking-search > .booking-search__field > input {
+  border: none;
+  margin: -1em;
+  padding: 1em;
+  background-color: transparent;
+  width: 100%;
+}
+
+.booking-search > .booking-search__field > input:focus-visible {
+  outline: none;
+}
+
+.booking-search > .booking-search__field > input::placeholder {
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  font-family: 'Gotham Pro';
+}
+
+.booking-search > .booking-search__button {
+  flex: 1;
+}
+
+.booking-search > .booking-search__button > button {
+  padding: 0 3em;
+  height: 100%;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5em;
+  color: var(--alternative-text-color);
+  font-size: 1rem;
+  font-weight: 700;
+}
