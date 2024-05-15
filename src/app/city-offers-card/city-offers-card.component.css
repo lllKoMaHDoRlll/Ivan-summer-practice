@@ -1,0 +1,58 @@
+.city-offers {
+  height: 15em;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1em;
+  color: var(--alternative-text-color);
+}
+
+.city-offers::after {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.city-offers > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.city-offers .city-offers__content__min-price {
+  position: absolute;
+  z-index: 20;
+  top: 1.5em;
+  right: 2em;
+  font-weight: 700;
+
+}
+
+.city-offers .city-offers__content__info {
+  position: absolute;
+  z-index: 20;
+  bottom: 2.5em;
+  left: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.city-offers .city-offers__content__info > .city-offers__content__info__offers-amount {
+  font-size: 0.75rem;
+}
+
+.city-offers .city-offers__content__info > .city-offers__content__info__offers-amount > span{
+  font-weight: 700;
+}
+
+.city-offers .city-offers__content__info > h4 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
