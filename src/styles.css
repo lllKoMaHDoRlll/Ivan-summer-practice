@@ -13,3 +13,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Gotham Pro';
+}
+
+@font-face {
+  font-family: Gotham Pro;
+  src: url("assets/fonts/gothampro.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
