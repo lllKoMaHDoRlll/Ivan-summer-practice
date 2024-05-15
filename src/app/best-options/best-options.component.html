@@ -1,1 +1,14 @@
-<p>best-options works!</p>
+<div class="best-options">
+  <div class="best-options__title">
+    <h1>ТОП предложений</h1>
+    <p>Что выбирают наши гости в этом сезоне</p>
+  </div>
+  <div class="best-options__content">
+    <div class="best-options__content__options">
+      <app-option *ngFor="let option_data of options_data" [option_data]="option_data"></app-option>
+    </div>
+    <div class="best-options__content__feedback-form">
+      <app-feedback-form></app-feedback-form>
+    </div>
+  </div>
+</div>
