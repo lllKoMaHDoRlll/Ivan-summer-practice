@@ -1,0 +1,49 @@
+.advantages {
+  padding: 0 11em;
+  display: flex;
+  gap: 3em;
+  flex-direction: column;
+}
+
+.advantages > .advantages__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.25rem;
+  gap: .5em;
+}
+
+.advantages > .advantages__title > p > span {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.advantages > .advantages__cards {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+}
+
+.card > img {
+  width: 6em;
+  vertical-align: center;
+}
+
+.card > h4 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.card > p {
+  text-align: center;
+}
