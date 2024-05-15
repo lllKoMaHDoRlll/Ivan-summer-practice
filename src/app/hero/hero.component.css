@@ -1,0 +1,20 @@
+.hero {
+  background: linear-gradient(105.24deg, rgba(21, 50, 53, 0.6) 22.15%, rgba(0, 0, 0, 0) 73.15%), url("/assets/images/hero_background.png");
+  background-size: 100%;
+  background-position: 50% 70%;
+  padding-bottom: 15em;
+}
+
+.hero > .hero__title {
+  margin: 4em 11em;
+  color: var(--alternative-text-color);
+}
+
+.hero > .hero__title > .hero__title__primary {
+  font-size: 3.25rem;
+  margin-bottom: .8em;
+}
+
+.hero > .hero__title > .hero__title__secondary {
+  font-size: 2rem;
+}
