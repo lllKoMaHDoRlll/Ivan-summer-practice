@@ -1,0 +1,83 @@
+.place-card {
+  padding: 1em;
+  display: grid;
+  grid-template-areas: "image title title"
+                       "image address address"
+                       "image treatments treatments"
+                       "image treatments treatments"
+                       "image advantages advantages"
+                       "image price button";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  column-gap: 1em;
+  row-gap: .5em;
+}
+
+.place-card > .place-card__image {
+  grid-area: image;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.place-card > .place-card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.place-card > .place-card__title {
+  grid-area: title;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.place-card > .place-card__address {
+  grid-area: address;
+  font-size: .875rem;
+  color: var(--secondary-text-color);
+}
+
+.place-card > .place-card__treatments-profiles {
+  grid-area: treatments;
+}
+
+.place-card > .place-card__treatments-profiles > h6 {
+  font-size: 1rem;
+}
+
+.place-card > .place-card__treatments-profiles > p {
+  font-size: 0.875rem;
+}
+
+.place-card > .place-card__advantages {
+  grid-area: advantages;
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.place-card > .place-card__advantages > .place-card__advantages__advantage > fa-icon {
+  margin-right: 1em;
+  color: var(--secondary-text-color);
+}
+
+.place-card > .place-card__price {
+  grid-area: price;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+
+.place-card > .place-card__button {
+  grid-area: button;
+}
+
+.place-card > .place-card__button > button {
+  padding: .3em 4em;
+  background-color: var(--alternative-text-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-weight: 900;
+  border-radius: 5em;
+}
