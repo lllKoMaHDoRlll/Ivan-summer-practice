@@ -1,0 +1,70 @@
+.catalog {
+  margin: 2em 10em;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.catalog > .catalog__title {
+  text-align: center;
+}
+
+
+.catalog > .catalog__title > h1 {
+  margin-bottom: .5em;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.catalog > .catalog__title > p {
+  font-size: 2rem;
+}
+
+.catalog > .catalog__body {
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+}
+
+.catalog > .catalog__body > .catalog__body__list {
+  width: calc(75% - 1em);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.catalog > .catalog__body > .catalog__body__filter {
+  padding: 1em;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.filter > .filter__group > .filter__group__title {
+  font-size: 1.1rem;
+}
+
+.filter > .filter__group > .filter__group__items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  padding: 1em 0;
+}
+
+.filter > .filter__group > .filter__group__items > li > input {
+  margin-right: 1em;
+}
+
+.filter > .filter__button {
+  padding: 1em 3em;
+  background-color: var(--accent-color);
+  color: var(--alternative-text-color);
+  font-weight: 700;
+  border: none;
+  border-radius: 5em;
+}
