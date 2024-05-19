@@ -1,1 +1,41 @@
-<p>place-card works!</p>
+<div class="place-card">
+  <div class="place-card__image">
+    <img [src]="image_base_filepath + place_card_data.image_filename" alt="Place image">
+  </div>
+  <div class="place-card__title">
+    <h4>
+      {{place_card_data.place_name}}
+    </h4>
+  </div>
+  <div class="place-card__address">
+    <span>
+      {{place_card_data.address}}
+    </span>
+  </div>
+  <div class="place-card__treatments-profiles">
+    <h6>Профили лечения:</h6>
+    <p>
+      {{place_card_data.treatment_profiles.join(", ")}}
+    </p>
+  </div>
+  <div class="place-card__advantages">
+    <div class="place-card__advantages__advantage">
+      <fa-icon [icon]="faWifi"></fa-icon>
+      <span>Wi-Fi</span>
+    </div>
+    <div class="place-card__advantages__advantage">
+      <fa-icon [icon]="faUtensils"></fa-icon>
+      <span>Шведская линия</span>
+    </div>
+    <div class="place-card__advantages__advantage">
+      <fa-icon [icon]="faUmbrellaBeach"></fa-icon>
+      <span>Курортная зона</span>
+    </div>
+  </div>
+  <div class="place-card__price">
+    <span>от {{place_card_data.min_price}} руб./сутки</span>
+  </div>
+  <div class="place-card__button">
+    <button>Подробнее</button>
+  </div>
+</div>
