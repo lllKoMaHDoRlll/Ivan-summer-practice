@@ -1,1 +1,242 @@
-<p>catalog works!</p>
+<div class="catalog">
+  <div class="catalog__title">
+    <h1>
+      Мы рекомендуем
+    </h1>
+    <p>
+      Что мы рекомендуем в этом сезоне. Успейте забронировать.
+    </p>
+  </div>
+  <div class="catalog__body">
+    <div class="catalog__body__list">
+      <app-place-card *ngFor="let place_card_data of place_cards_data" [place_card_data]="place_card_data"></app-place-card>
+    </div>
+    <div class="catalog__body__filter filter">
+      <div class="filter__group">
+        <h4 class="filter__group__title">
+          Город
+        </h4>
+        <ul class="filter__group__items">
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Кисловодск
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Пятигорск
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Ессентуки
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Железноводск
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__group">
+        <h4 class="filter__group__title">
+          Тип питания
+        </h4>
+        <ul class="filter__group__items">
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Шведский стол
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Меню заказ
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Завтрак
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__group">
+        <h4 class="filter__group__title">
+          Город
+        </h4>
+        <ul class="filter__group__items">
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Кисловодск
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Пятигорск
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Ессентуки
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Железноводск
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__group">
+        <h4 class="filter__group__title">
+          Тип питания
+        </h4>
+        <ul class="filter__group__items">
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Шведский стол
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Меню заказ
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Завтрак
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__group">
+        <h4 class="filter__group__title">
+          Город
+        </h4>
+        <ul class="filter__group__items">
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Кисловодск
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Пятигорск
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Ессентуки
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Железноводск
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__group">
+        <h4 class="filter__group__title">
+          Тип питания
+        </h4>
+        <ul class="filter__group__items">
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Шведский стол
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Меню заказ
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Завтрак
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__group">
+        <h4 class="filter__group__title">
+          Город
+        </h4>
+        <ul class="filter__group__items">
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Кисловодск
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Пятигорск
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Ессентуки
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Железноводск
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__group">
+        <h4 class="filter__group__title">
+          Тип питания
+        </h4>
+        <ul class="filter__group__items">
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Шведский стол
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Меню заказ
+            </span>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="">
+            <span>
+              Завтрак
+            </span>
+          </li>
+        </ul>
+      </div>
+      <button class="filter__button">Подобрать</button>
+    </div>
+  </div>
+</div>
