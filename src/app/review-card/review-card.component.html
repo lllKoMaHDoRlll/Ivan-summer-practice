@@ -1,1 +1,14 @@
-<p>review-card works!</p>
+<div class="review-card">
+  <h4 class="review-card__title">
+    {{review_card_data.place_name}}
+  </h4>
+  <div class="review-card__rating">
+    <fa-icon *ngFor="let icon of get_stars_icons(review_card_data.rating)" [icon]="icon"></fa-icon>
+  </div>
+  <p class="review-card__text">
+    {{review_card_data.review_text}}
+  </p>
+  <span class="review-card__author">
+    {{review_card_data.author_name}}, г. {{review_card_data.author_city}}
+  </span>
+</div>
