@@ -1,0 +1,15 @@
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.review-card > .review-card__rating {
+  display: flex;
+  gap: .2em;
+  color: #FFA41D;
+}
+
+.review-card > .review-card__text {
+  padding: 1em 0;
+}
