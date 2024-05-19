@@ -1,1 +1,16 @@
-<p>reviews works!</p>
+<div class="reviews">
+  <div class="reviews__title">
+    <h1>
+      Отзывы
+    </h1>
+    <p>
+      Что говорят наши гости?
+    </p>
+  </div>
+  <div class="reviews__list">
+    <app-review-card *ngFor="let review_card_data of review_cards_data" [review_card_data]="review_card_data"></app-review-card>
+  </div>
+  <div class="reviews__more-button">
+    <button>Все отзывы</button>
+  </div>
+</div>
