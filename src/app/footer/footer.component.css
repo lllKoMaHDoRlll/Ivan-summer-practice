@@ -1,0 +1,108 @@
+.offers {
+  display: flex;
+  margin: 2em 11em;
+  justify-content: space-evenly;
+}
+
+.offers .offers__offer {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.footer__body {
+  background-color: var(--primary-dark-color);
+  border-radius: 5em 5em 0 0;
+  display: flex;
+  padding: 2em 5em;
+  color: var(--alternative-text-color);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__body > .footer__body__logo > img {
+  width: 160px;
+  height: auto;
+}
+
+.footer__body > .footer__body__group {
+  display: flex;
+  flex-direction: column;
+  gap: .6em;
+}
+
+.footer__body > .footer__body__group > .footer__body__group__title {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: .4em;
+}
+
+.footer__body > .footer__body__group > .footer__body__group__item > a {
+  color: var(--alternative-text-color);
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.socials > .socials__item > fa-icon {
+  font-size: 1.7rem;
+  color: var(--alternative-text-color);
+  font-weight: 900;
+}
+
+.shedule {
+  max-width: fit-content;
+  color: var(--alternative-text-color);
+  max-width: 10em;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: stretch;
+}
+
+.contacts > .contacts__item {
+  font-size: 1.5rem;
+  min-width: max-content;
+}
+
+.contacts > .contacts__item > fa-icon {
+  color: var(--secondary-text-color);
+  margin-right: .5em;
+}
+
+.contacts > .contacts__item > a {
+  text-decoration: none;
+  color: var(--alternative-text-color);
+  font-weight: 900;
+}
+
+.contacts > .contacts__book-button > button {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  background-color: var(--secondary-text-color);
+  color: var(--alternative-text-color);
+  padding: 1em;
+  border-radius: 5em;
+}
+
+.footer__extra-links {
+  background-color: var(--primary-dark-color);
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+.footer__extra-links > .footer__extra-links__link > a {
+  color: var(--primary-text-color);
+}
