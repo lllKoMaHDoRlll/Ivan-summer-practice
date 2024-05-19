@@ -1,5 +1,5 @@
 export interface NewsCardData {
   title: string;
-  date: Date;
+  date: string;
   text: string;
 }
