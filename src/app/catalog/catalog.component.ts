@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { PlaceCardComponent } from '../place-card/place-card.component';
 import { PlaceCardData } from '../place-card-data';
 import { CommonModule } from '@angular/common';
+import { LiteralArray } from '@angular/compiler';
 
 @Component({
   selector: 'app-catalog',
@@ -14,6 +15,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './catalog.component.css'
 })
 export class CatalogComponent {
+  @Input() catalogTitle: string = "Мы рекомендуем";
+  @Input() catalogSubTitle: string = "Что мы рекомендуем в этом сезоне. Успейте забронировать.";
+  @Input() filterPosition: "left" | "right" = "right";
+
   place_cards_data: PlaceCardData[] = [
     {
       image_filename: "kislovodsk.png",

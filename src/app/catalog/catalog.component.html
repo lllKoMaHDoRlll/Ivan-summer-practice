@@ -1,13 +1,13 @@
 <div class="catalog">
   <div class="catalog__title">
     <h1>
-      Мы рекомендуем
+      {{catalogTitle}}
     </h1>
     <p>
-      Что мы рекомендуем в этом сезоне. Успейте забронировать.
+      {{catalogSubTitle}}
     </p>
   </div>
-  <div class="catalog__body">
+  <div class="catalog__body" [style]="filterPosition == 'left' ? 'flex-direction: row-reverse;' : ''">
     <div class="catalog__body__list">
       <app-place-card *ngFor="let place_card_data of place_cards_data" [place_card_data]="place_card_data"></app-place-card>
     </div>
