@@ -1,1 +1,35 @@
-<p>news-catalog works!</p>
+<section class="news-catalog">
+  <div class="news-catalog__categories">
+    <h3>Рубрики</h3>
+    <ul>
+      <li><a href="#">Здоровье</a></li>
+      <li><a href="#">Спорт</a></li>
+      <li><a href="#">Активный отдых</a></li>
+      <li><a href="#">Отдых с детьми</a></li>
+      <li><a href="#">Транспорт</a></li>
+      <li><a href="#">Зимний отдых</a></li>
+      <li><a href="#">Море</a></li>
+      <li><a href="#">Экскурсии</a></li>
+      <li><a href="#">Для самых маленьких</a></li>
+      <li><a href="#">Культурный досуг</a></li>
+      <li><a href="#">Велоспорт</a></li>
+      <li><a href="#">Питание</a></li>
+      <li><a href="#">Традиции и культура</a></li>
+      <li><a href="#">Достопримечательности</a></li>
+      <li><a href="#">Парусный спорт</a></li>
+    </ul>
+  </div>
+  <div class="news-catalog__body">
+    <h1 class="news-catalog__body__title">
+      Новости
+    </h1>
+    <div class="news-catalog__body__items">
+      <app-news-catalog-card *ngFor="let news_card_data of news_cards_data" [news_card_data]="news_card_data"></app-news-catalog-card>
+    </div>
+    <div class="news-catalog__body__pagination pagination">
+      <span class="pagination__item pagination__item--active">1</span>
+      <span class="pagination__item">2</span>
+      <span class="pagination__item">3</span>
+    </div>
+  </div>
+</section>
