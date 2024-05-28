@@ -1,1 +1,20 @@
-<p>news-catalog-card works!</p>
+<div class="news-card">
+  <div class="news-card__image">
+    <img [src]="image_base_filepath + news_card_data.image_filename" alt="News card image">
+  </div>
+  <div class="news-card__title">
+    <h3>
+      {{news_card_data.title}}
+    </h3>
+  </div>
+  <div class="news-card__date">
+    <p>
+      {{news_card_data.date}}
+    </p>
+  </div>
+  <div class="news-card__body">
+    <p>
+      {{news_card_data.text}}
+    </p>
+  </div>
+</div>

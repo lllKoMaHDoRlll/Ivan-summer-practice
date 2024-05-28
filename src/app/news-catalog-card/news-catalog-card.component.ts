@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NewsCardData } from '../news-card-data';
 
 @Component({
   selector: 'app-news-catalog-card',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './news-catalog-card.component.css'
 })
 export class NewsCatalogCardComponent {
-
+  image_base_filepath = "assets/images/cities/";
+  @Input() news_card_data!: NewsCardData;
 }
