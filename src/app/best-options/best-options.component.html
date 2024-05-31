@@ -5,7 +5,7 @@
   </div>
   <div class="best-options__content">
     <div class="best-options__content__options">
-      <app-option *ngFor="let option_data of options_data" [option_data]="option_data"></app-option>
+      <app-option *ngFor="let option_data of options_data" [option_data]="option_data" (click)="goTo('place')"></app-option>
     </div>
     <div class="best-options__content__feedback-form">
       <app-feedback-form></app-feedback-form>

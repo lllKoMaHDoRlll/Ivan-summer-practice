@@ -8,5 +8,5 @@
   <div class="news__list">
     <app-news-card *ngFor="let news_card_data of news_cards_data" [news_card_data]="news_card_data"></app-news-card>
   </div>
-  <button class="news__button">Все новости</button>
+  <button class="news__button" (click)="goTo('news')">Все новости</button>
 </div>

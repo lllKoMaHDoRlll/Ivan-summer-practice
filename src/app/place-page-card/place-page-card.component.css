@@ -141,6 +141,7 @@
   font-weight: 500;
   color: var(--alternative-text-color);
   border-radius: 1em 1em 0 0;
+  cursor: pointer;
 }
 
 .tabs > .tabs__titles > .tabs__titles__item--active {

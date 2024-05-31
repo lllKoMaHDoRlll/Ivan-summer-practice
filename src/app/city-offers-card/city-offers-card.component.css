@@ -5,6 +5,7 @@
   position: relative;
   border-radius: 1em;
   color: var(--alternative-text-color);
+  cursor: pointer;
 }
 
 .city-offers::after {

@@ -5,6 +5,7 @@
   border-radius: 1em;
   color: var(--alternative-text-color);
   max-width: 350px;
+  cursor: pointer;
 }
 
 .option::after {

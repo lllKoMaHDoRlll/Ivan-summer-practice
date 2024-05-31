@@ -9,6 +9,7 @@ import { ReviewsComponent } from '../reviews/reviews.component';
 import { CatalogComponent } from '../catalog/catalog.component';
 import { NewsComponent } from '../news/news.component';
 import { FooterComponent } from '../footer/footer.component';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -29,6 +30,8 @@ import { FooterComponent } from '../footer/footer.component';
 })
 
 export class HomeComponent {
+  constructor(private router: Router) {}
+
   cities_offers_data: CityOffersData[] = [
     {
       city_name: "кисловодск",
@@ -55,4 +58,8 @@ export class HomeComponent {
       city_photo_name: "jeleznovodsk.png"
     }
   ];
+
+  goTo(path: string): void {
+    this.router.navigate([path]);
+  }
 }

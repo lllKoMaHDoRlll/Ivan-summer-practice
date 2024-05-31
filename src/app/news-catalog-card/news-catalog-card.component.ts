@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NewsCardData } from '../news-card-data';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-news-catalog-card',
@@ -9,6 +10,12 @@ import { NewsCardData } from '../news-card-data';
   styleUrl: './news-catalog-card.component.css'
 })
 export class NewsCatalogCardComponent {
+  constructor(private router: Router) {}
+
   image_base_filepath = "assets/images/cities/";
   @Input() news_card_data!: NewsCardData;
+
+  goTo(path: string): void {
+    this.router.navigate([path]);
+  }
 }

@@ -1,10 +1,10 @@
 <app-hero></app-hero>
 <div class="cities-offers">
-  <app-city-offers-card *ngFor="let city_offer_data of cities_offers_data" [city_offers_data]="city_offer_data"></app-city-offers-card>
+  <app-city-offers-card *ngFor="let city_offer_data of cities_offers_data" [city_offers_data]="city_offer_data" (click)="goTo('place')"></app-city-offers-card>
 </div>
 <div class="search-bar">
   <input type="text" placeholder="Поиск по санаториям и отелям">
-  <button>Найти</button>
+  <button (click)="goTo('catalog')">Найти</button>
 </div>
 <app-company-advantages></app-company-advantages>
 <app-best-options></app-best-options>

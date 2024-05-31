@@ -3,6 +3,7 @@ import { PlaceCardComponent } from '../place-card/place-card.component';
 import { PlaceCardData } from '../place-card-data';
 import { CommonModule } from '@angular/common';
 import { LiteralArray } from '@angular/compiler';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-catalog',
@@ -15,6 +16,8 @@ import { LiteralArray } from '@angular/compiler';
   styleUrl: './catalog.component.css'
 })
 export class CatalogComponent {
+  constructor(private router: Router) {}
+
   @Input() catalogTitle: string = "Мы рекомендуем";
   @Input() catalogSubTitle: string = "Что мы рекомендуем в этом сезоне. Успейте забронировать.";
   @Input() filterPosition: "left" | "right" = "right";
@@ -117,4 +120,8 @@ export class CatalogComponent {
       min_price: 9500
     }
   ];
+
+  goTo(path: string): void {
+    this.router.navigate([path]);
+  }
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NewsCardComponent } from '../news-card/news-card.component';
 import { NewsCardData } from '../news-card-data';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-news',
@@ -15,6 +16,8 @@ import { NewsCardData } from '../news-card-data';
 })
 
 export class NewsComponent {
+  constructor(private router: Router) {}
+
   news_cards_data: NewsCardData[] = [
     {
       title: 'Важное в туризме за неделю: перспективы "безвиза", новые рейсы и рост цен',
@@ -32,4 +35,8 @@ export class NewsComponent {
       text: "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "
     },
   ];
+
+  goTo(path: string): void {
+    this.router.navigate([path]);
+  }
 }

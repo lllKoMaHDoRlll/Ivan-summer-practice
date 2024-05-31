@@ -3,6 +3,7 @@ import { OptionData } from '../option-data';
 import { OptionComponent } from '../option/option.component';
 import { CommonModule } from '@angular/common';
 import { FeedbackFormComponent } from '../feedback-form/feedback-form.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-best-options',
@@ -16,6 +17,8 @@ import { FeedbackFormComponent } from '../feedback-form/feedback-form.component'
   styleUrl: './best-options.component.css'
 })
 export class BestOptionsComponent {
+  constructor(private router: Router) {}
+
   options_data: OptionData[] = [
     {
       name: "отель «солнечный»",
@@ -48,4 +51,8 @@ export class BestOptionsComponent {
       suggestion_type: 2
     }
   ];
+
+  goTo(path: string): void {
+    this.router.navigate([path]);
+  }
 }
