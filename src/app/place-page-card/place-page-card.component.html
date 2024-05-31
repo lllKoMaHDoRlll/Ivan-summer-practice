@@ -1,1 +1,226 @@
-<p>place-page-card works!</p>
+<div class="place-card">
+  <h1 class="place-card__title">
+    Санаторий «Машук»
+  </h1>
+  <div class="place-card__body">
+    <div class="place-card__body__gallery gallery">
+      <div class="gallery__main">
+        <img src="assets/images/cities/mountain.png" alt="">
+      </div>
+      <div class="gallery__thumb"><img src="assets/images/cities/mountain_2.png" alt=""></div>
+      <div class="gallery__thumb"><img src="assets/images/cities/fountain.png" alt=""></div>
+      <div class="gallery__thumb"><img src="assets/images/cities/fountain_2.png" alt=""></div>
+    </div>
+    <div class="place-card__body__meta-data meta-data">
+      <div class="meta-data__rating">
+        <span>Рейтинг:</span>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStar"></fa-icon>
+        <fa-icon [icon]="faStarHalfStroke"></fa-icon>
+      </div>
+      <div class="meta-data__book-button">
+        <button>Забронировать</button>
+      </div>
+      <div class="meta-data__location">
+        <img src="assets/images/locations/1.png" alt="location">
+      </div>
+      <div class="meta-data__contacts contacts">
+        <div class="contacts__item">
+          <h4>Координаты:</h4>
+          <p>44.0486, 43.0594</p>
+        </div>
+        <div class="contacts__item">
+          <h4>Местоположение:</h4>
+          <p>город Пятигорск, ул. Островского, 115</p>
+        </div>
+        <div class="contacts__item">
+          <h4>Телефон:</h4>
+          <p>8 800 123 45 67</p>
+        </div>
+        <div class="contacts__item">
+          <h4>E-mail:</h4>
+          <p><a href="mailto:info@web-systemz.ru">info&#64;web-systemz.ru</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="place-card__body__description description">
+      <p class="description__price">Стоимость от <span>9500 руб./сутки</span></p>
+      <div class="description__advantages advantages">
+        <div class="advantages__item">
+          <fa-icon [icon]="faWifi"></fa-icon><span>Wi-Fi</span>
+        </div>
+        <div class="advantages__item">
+          <fa-icon [icon]="faUtensils"></fa-icon><span>Шведская линия</span>
+        </div>
+        <div class="advantages__item">
+          <fa-icon [icon]="faTree"></fa-icon><span>Курортная зона</span>
+        </div>
+        <div class="advantages__item">
+          <fa-icon [icon]="faPersonSwimming"></fa-icon><span>Бассейн</span>
+        </div>
+        <div class="advantages__item">
+          <fa-icon [icon]="faSquareParking"></fa-icon><span>Парковка</span>
+        </div>
+        <div class="advantages__item">
+          <fa-icon [icon]="faUmbrellaBeach"></fa-icon><span>Песчанный пляж</span>
+        </div>
+      </div>
+      <div class="description__tabs tabs">
+        <div class="tabs__titles">
+          <span id="tabs-title-description" class="tabs__titles__item tabs__titles__item--active" (click)="onTabClick(this.tabs['tabs-title-description'])">Описание</span>
+          <span id="tabs-title-rooms" class="tabs__titles__item" (click)="onTabClick(this.tabs['tabs-title-rooms'])">Номерной фонд</span>
+          <span id="tabs-title-reviews" class="tabs__titles__item" (click)="onTabClick(this.tabs['tabs-title-reviews'])">Отзывы</span>
+        </div>
+        <div class="tabs__bodies">
+          <div id="tabs-body-description" class="tabs__bodies__item tabs__bodies__item--active">
+            <h2>О санатории</h2>
+            <p>Санаторий «Машук» в Пятигорске располагается в центре города, недалеко от парка «Цветник» и подножия самой знаменитой горы региона. Вся инфраструктура учреждения разместилась в одном многоэтажном корпусе, оснащенном скоростными лифтами. Обстановка жилого блока располагает к продуктивному отдыху – здесь гости санатория могут подобрать для себя 1-2-местный номер со всеми удобствами, с потрясающим видом из окна и всей необходимой мебелью и бытовой техникой. В санатории «Машук» в Пятигорске можно отдыхать всей семьей в уютных трехкомнатных номерах типа «Семейный».</p>
+            <p>Основная специализация санатория – оказание услуг лечебно-профилактического профиля, но помимо лечения, гости учреждения могут с пользой проводить время на развлекательных и познавательных мероприятиях, заниматься спортом, ходить на экскурсии по городу и близлежащим окрестностям. Уютный конференц-зал позволяет проводить тематические встречи. Для оздоровительных прогулок на территории санатория имеется собственный парк, в пешей доступности располагается бювет с минеральной водой.</p>
+            <h2>Организация лечения</h2>
+            <p>Лечению гостей в санатории «Машук» Пятигорска уделяется особенное внимание, при этом спектр услуг включает в себя полное обследование и предварительную диагностику общего состояния пациента. По результату лечащий врач может подобрать наиболее эффективную программу лечения. В санатории «Машук» в Пятигорске реализуются бальнеологические процедуры, физиотерапевтические воздействия для работы с патологиями по основному и сопутствующим медицинским профилям:</p>
+            <ul>
+              <li>Заболевания нервной системы.</li>
+              <li>Патологии работы органов пищеварительной системы и ЖКТ.</li>
+              <li>Нарушения функциональности опорно-двигательного аппарата.</li>
+              <li>Дерматологические заболевания.</li>
+              <li>Болезни мочеполовой системы.</li>
+            </ul>
+          </div>
+          <div id="tabs-body-rooms" class="tabs__bodies__item">
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="assets/images/rooms/1.png" alt="Room image">
+              </div>
+              <div class="room-card__title">
+                <h4>
+                  Двухместный стандарт
+                </h4>
+              </div>
+              <div class="room-card__description">
+                <span>
+                  Двухместный стандартный номер. Площадь номера 14 кв. м.
+                </span>
+              </div>
+              <div class="room-card__services">
+                <p>
+                  <span>Сервис:</span>
+                  смена полотенец: на 4-й день, смена постельного белья: на 4-й день уборка номера: ежедневно, услуги внутренней телефонной связи
+                </p>
+              </div>
+              <div class="room-card__advantages">
+                <div class="room-card__advantages__advantage">
+                  <fa-icon [icon]="faWifi"></fa-icon>
+                  <span>Wi-Fi</span>
+                </div>
+                <div class="room-card__advantages__advantage">
+                  <fa-icon [icon]="faUtensils"></fa-icon>
+                  <span>Холодильник</span>
+                </div>
+                <div class="room-card__advantages__advantage">
+                  <fa-icon [icon]="faUmbrellaBeach"></fa-icon>
+                  <span>Душевая кабина</span>
+                </div>
+              </div>
+              <div class="room-card__persons-amount">
+                <p>Количество человек: 2</p>
+              </div>
+              <div class="room-card__button">
+                <button>Забронирать</button>
+              </div>
+            </div>
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="assets/images/rooms/2.png" alt="Room image">
+              </div>
+              <div class="room-card__title">
+                <h4>
+                  Одноместный стандарт
+                </h4>
+              </div>
+              <div class="room-card__description">
+                <span>
+                  Одноместный стандартный номер. Площадь номера 12 кв. м.
+                </span>
+              </div>
+              <div class="room-card__services">
+                <p>
+                  <span>Сервис:</span>
+                  смена полотенец: на 4-й день, смена постельного белья: на 4-й день уборка номера: ежедневно, услуги внутренней телефонной связи
+                </p>
+              </div>
+              <div class="room-card__advantages">
+                <div class="room-card__advantages__advantage">
+                  <fa-icon [icon]="faWifi"></fa-icon>
+                  <span>Wi-Fi</span>
+                </div>
+                <div class="room-card__advantages__advantage">
+                  <fa-icon [icon]="faUtensils"></fa-icon>
+                  <span>Холодильник</span>
+                </div>
+                <div class="room-card__advantages__advantage">
+                  <fa-icon [icon]="faUmbrellaBeach"></fa-icon>
+                  <span>Душевая кабина</span>
+                </div>
+              </div>
+              <div class="room-card__persons-amount">
+                <p>Количество человек: 2</p>
+              </div>
+              <div class="room-card__button">
+                <button>Забронирать</button>
+              </div>
+            </div>
+            <div class="room-card">
+              <div class="room-card__image">
+                <img src="assets/images/rooms/3.png" alt="Room image">
+              </div>
+              <div class="room-card__title">
+                <h4>
+                  Люкс
+                </h4>
+              </div>
+              <div class="room-card__description">
+                <span>
+                  Двухкомнатный двухместный номер с балконом. Площадь номера 28 кв. м.
+                </span>
+              </div>
+              <div class="room-card__services">
+                <p>
+                  <span>Сервис:</span>
+                  смена полотенец: на 4-й день, смена постельного белья: на 4-й день уборка номера: ежедневно, услуги внутренней телефонной связи
+                </p>
+              </div>
+              <div class="room-card__advantages">
+                <div class="room-card__advantages__advantage">
+                  <fa-icon [icon]="faWifi"></fa-icon>
+                  <span>Wi-Fi</span>
+                </div>
+                <div class="room-card__advantages__advantage">
+                  <fa-icon [icon]="faUtensils"></fa-icon>
+                  <span>Холодильник</span>
+                </div>
+                <div class="room-card__advantages__advantage">
+                  <fa-icon [icon]="faUmbrellaBeach"></fa-icon>
+                  <span>Душевая кабина</span>
+                </div>
+              </div>
+              <div class="room-card__persons-amount">
+                <p>Количество человек: 2</p>
+              </div>
+              <div class="room-card__button">
+                <button>Забронирать</button>
+              </div>
+            </div>
+          </div>
+          <div id="tabs-body-reviews" class="tabs__bodies__item">
+            <app-review-card *ngFor="let review_card_data of review_cards_data" [review_card_data]="review_card_data"></app-review-card>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="place-card__body__feedback-form">
+      <app-feedback-form></app-feedback-form>
+    </div>
+  </div>
+</div>

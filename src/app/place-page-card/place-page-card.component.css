@@ -1,0 +1,259 @@
+
+.place-card {
+  margin: 2em 11em;
+}
+
+.place-card > .place-card__title {
+  font-size: 2rem;
+  margin-bottom: 1.25em;
+}
+
+.place-card > .place-card__body {
+  display: grid;
+  grid-template-areas: "gallery meta-data"
+                       "description feedback-form";
+  grid-template-columns: 2.5fr 1fr;
+  grid-gap: 2em;
+}
+
+.place-card > .place-card__body > .place-card__body__gallery {
+  grid-area: gallery;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.gallery > .gallery__main {
+  grid-column: 1 / 4;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.gallery > .gallery__main > img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.gallery > .gallery__thumb {
+  grid-row: 2;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 1em;
+}
+
+.gallery > .gallery__thumb > img {
+  object-fit: cover;
+  height: 110%;
+}
+
+.place-card > .place-card__body > .place-card__body__meta-data {
+  grid-area: meta-data;
+}
+
+.meta-data {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: stretch;
+}
+
+.meta-data > .meta-data__rating > span {
+  margin-right: 0.8em;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.meta-data > .meta-data__rating > fa-icon {
+  color: #FFA41D;
+}
+
+.meta-data > .meta-data__book-button > button {
+  width: 100%;
+  max-width: 400px;
+  padding: .75em 3em;
+  background-color: var(--alternative-text-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-weight: 900;
+  border-radius: 5em;
+}
+
+.meta-data > .meta-data__location > img {
+  width: 100%;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 1em;
+}
+
+.contacts > .contacts__item > h4 {
+  margin-bottom: .5em;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.description > .description__price {
+  font-size: 1.2rem;
+}
+
+.description > .description__price > span {
+  font-weight: 900;
+}
+
+.advantages {
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.advantages > .advantages__item > fa-icon {
+  margin-right: .5em;
+  color: var(--secondary-text-color);
+  font-size: 1.2rem;
+}
+
+.advantages > .advantages__item > span {
+  font-size: .8rem;
+  font-weight: 900;
+}
+
+.tabs > .tabs__titles {
+  display: flex;
+  gap: 3em;
+}
+
+.tabs > .tabs__titles > .tabs__titles__item {
+  background-color: var(--secondary-text-color);
+  padding: 1em 3em;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--alternative-text-color);
+  border-radius: 1em 1em 0 0;
+}
+
+.tabs > .tabs__titles > .tabs__titles__item--active {
+  background-color: var(--alternative-text-color);
+  color: var(--primary-text-color);
+}
+
+.tabs__bodies__item {
+  padding: 2em;
+  display: none;
+}
+
+.tabs__bodies__item--active {
+  display: block;
+}
+
+#tabs-body-description > h2 {
+  margin-bottom: 1em;
+}
+
+#tabs-body-description > p {
+  margin-bottom: 1em;
+}
+
+#tabs-body-description > ul {
+  margin-left: 2em;
+}
+
+.room-card {
+  padding: 1em;
+  display: grid;
+  grid-template-areas: "image title title"
+                       "image description description"
+                       "image services services"
+                       "image services services"
+                       "image advantages advantages"
+                       "image persons-amount button";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  column-gap: 1em;
+  row-gap: .5em;
+}
+
+.room-card > .room-card__image {
+  grid-area: image;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.room-card > .room-card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.room-card > .room-card__title {
+  grid-area: title;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.room-card > .room-card__description {
+  grid-area: description;
+  font-size: .875rem;
+}
+
+.room-card > .room-card__services {
+  grid-area: services;
+}
+
+.room-card > .room-card__services > p {
+  display: inline;
+  font-size: 0.875rem;
+}
+
+.room-card > .room-card__services > p > span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.room-card > .room-card__advantages {
+  grid-area: advantages;
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.room-card > .room-card__advantages > .room-card__advantages__advantage > fa-icon {
+  margin-right: 1em;
+  color: var(--secondary-text-color);
+}
+
+.room-card > .room-card__persons-amount {
+  grid-area: persons-amount;
+}
+
+.room-card > .room-card__button {
+  grid-area: button;
+}
+
+.room-card > .room-card__button > button {
+  padding: .3em 4em;
+  background-color: var(--alternative-text-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-weight: 900;
+  border-radius: 5em;
+}
+
+#tabs-body-reviews > app-review-card + app-review-card {
+  margin-top: 3em;
+}
+
+
