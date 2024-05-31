@@ -1,1 +1,14 @@
-<p>place-page works!</p>
+<app-hero [doShowTitle]="false"></app-hero>
+<main>
+  <div class="search-bar">
+    <input type="text" placeholder="Поиск по санаториям и отелям">
+    <button>Найти</button>
+  </div>
+  <div class="page-position">
+    <p>
+      <span><a href="#">Главная</a></span> / <span><a href="#">Отдых в Пятигорске</a></span> / <span>Санаторий «Машук»</span>
+    </p>
+  </div>
+  <app-place-page-card></app-place-page-card>
+</main>
+<app-footer></app-footer>
