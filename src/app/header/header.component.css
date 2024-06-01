@@ -86,3 +86,15 @@
   padding: 1em;
   border-radius: 5em;
 }
+
+@media screen and (width <= 900px) {
+  .socials, .shedule, .navigation {
+    display: none;
+  }
+}
+
+@media screen and (width <= 400px) {
+  .header {
+    flex-direction: column;
+  }
+}

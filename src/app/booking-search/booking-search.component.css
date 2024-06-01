@@ -13,6 +13,8 @@
   border-radius: 5em;
   font-size: 1.2rem;
   flex: 1;
+  white-space: nowrap;
+  grid-row: 1;
 }
 
 .booking-search > .booking-search__field > fa-icon {
@@ -52,4 +54,55 @@
   color: var(--alternative-text-color);
   font-size: 1rem;
   font-weight: 700;
+}
+
+@media screen and (width <= 1300px) {
+  .booking-search {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .booking-search > .booking-search__button {
+    grid-column: 2;
+  }
+}
+
+@media screen and (width <= 1000px) {
+  .booking-search {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .booking-search > .booking-search__field:nth-child(3) {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+
+  .booking-search > .booking-search__button {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (width <= 700px) {
+  .booking-search {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 0 4em;
+  }
+
+  .booking-search > .booking-search__field:nth-child(2) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .booking-search > .booking-search__field:nth-child(3) {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .booking-search > .booking-search__button {
+    grid-row: 4;
+    grid-column: 1;
+  }
 }

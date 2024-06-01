@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(105.24deg, rgba(21, 50, 53, 0.6) 22.15%, rgba(0, 0, 0, 0) 73.15%), url("/assets/images/hero_background.png");
-  background-size: 100%;
+  background-size: cover;
   background-position: 50% 70%;
   padding-bottom: 15em;
   margin-bottom: -10em;
@@ -18,4 +18,10 @@
 
 .hero > .hero__title > .hero__title__secondary {
   font-size: 2rem;
+}
+
+@media screen and (width < 700px) {
+  .hero > .hero__title {
+    margin: 2em 4em;
+  }
 }
