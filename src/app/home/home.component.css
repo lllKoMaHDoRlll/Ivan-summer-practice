@@ -1,8 +1,7 @@
 .cities-offers {
   padding: 0 11em;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1em;
 }
 .cities-offers > * {
@@ -37,4 +36,34 @@
   font-weight: 700;
   padding: 1em 2em;
   width: 24em;
+}
+
+@media screen and (width <= 1600px) {
+  .cities-offers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-bar {
+    margin: 4em 0;
+  }
+}
+
+@media screen and (width <= 800px) {
+  .cities-offers {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (width < 700px) {
+  .cities-offers, .search-bar {
+    padding: 0 4em;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar > button {
+    width: 100%;
+  }
 }
