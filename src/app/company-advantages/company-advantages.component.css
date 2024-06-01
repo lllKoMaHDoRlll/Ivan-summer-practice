@@ -13,6 +13,10 @@
   gap: .5em;
 }
 
+.advantages > .advantages__title > p {
+  text-align: center;
+}
+
 .advantages > .advantages__title > p > span {
   text-transform: uppercase;
   font-weight: 900;
@@ -46,4 +50,14 @@
 
 .card > p {
   text-align: center;
+}
+
+@media screen and (width <= 700px) {
+  .advantages {
+    padding: 0 4em;
+  }
+
+  .advantages > .advantages__cards {
+    flex-direction: column;
+  }
 }
