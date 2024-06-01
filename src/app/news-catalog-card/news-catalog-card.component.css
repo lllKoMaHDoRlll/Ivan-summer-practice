@@ -44,3 +44,20 @@
 .news-card > .news-card__body > p {
   font-size: .8rem;
 }
+
+@media screen and (width <= 1300px) {
+  .news-card {
+    grid-template-areas: "image"
+                       "title"
+                       "date"
+                       "body";
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    gap: 1em;
+  }
+
+  .news-card > .news-card__image > img {
+    height: 250px;
+    width: 100%;
+  }
+}
