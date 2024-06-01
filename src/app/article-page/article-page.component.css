@@ -96,3 +96,46 @@ main {
 .article-card > .article-card__body > p + p {
   margin-top: 2em;
 }
+
+@media screen and (width <= 1600px) {
+  .search-bar {
+    margin: 2em 0;
+    margin-bottom: 0;
+  }
+
+  .page-position {
+    padding: 0 11em;
+  }
+}
+
+@media screen and (width <= 1000px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (width <= 700px) {
+  .search-bar {
+    padding: 2em 4em;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar > button {
+    width: 100%;
+  }
+
+  .page-position {
+    padding: 0 4em;
+  }
+
+  .content {
+    margin: 3em;
+  }
+
+  .article-card > .article-card__head > h1 {
+    font-size: 1.5rem;
+  }
+}
