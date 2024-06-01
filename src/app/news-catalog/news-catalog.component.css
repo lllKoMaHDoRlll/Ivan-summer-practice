@@ -58,8 +58,19 @@
   cursor: pointer;
 }
 
-
 .pagination > .pagination__item.pagination__item--active {
   color: var(--alternative-text-color);
   background-color: var(--primary-color);
+}
+
+@media screen and (width <= 900px) {
+  .news-catalog {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (width <=700px) {
+  .news-catalog {
+    margin: 2em 3em;
+  }
 }
