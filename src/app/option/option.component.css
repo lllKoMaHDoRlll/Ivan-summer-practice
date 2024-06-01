@@ -54,3 +54,9 @@
 .suggestion.suggestion--type2 {
   background-color: var(--accent-color);
 }
+
+@media screen and (width <= 1000px) {
+  .option {
+    max-width: unset;
+  }
+}
