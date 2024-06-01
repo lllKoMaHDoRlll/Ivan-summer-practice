@@ -38,3 +38,32 @@ main {
 .page-position a {
   color: var(--accent-color);
 }
+
+@media screen and (width <= 1600px) {
+  .search-bar {
+    margin: 2em 0;
+    margin-bottom: 0;
+  }
+
+  .page-position {
+    padding: 0 11em;
+  }
+}
+
+@media screen and (width < 700px) {
+  .search-bar {
+    padding: 2em 4em;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar > button {
+    width: 100%;
+  }
+
+  .page-position {
+    padding: 0 4em;
+  }
+}
