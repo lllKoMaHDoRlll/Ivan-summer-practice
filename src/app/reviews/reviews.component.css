@@ -41,3 +41,12 @@
   background-color: var(--accent-color);
 }
 
+@media screen and (width <= 700px) {
+  .reviews {
+    margin: 0 3em;
+  }
+
+  .reviews > .reviews__list {
+    grid-template-columns: 1fr;
+  }
+}
