@@ -56,6 +56,7 @@
   display: flex;
   gap: 1em;
   justify-content: space-between;
+  white-space: nowrap;
 }
 
 .place-card > .place-card__advantages > .place-card__advantages__advantage > fa-icon {
@@ -80,4 +81,43 @@
   color: var(--accent-color);
   font-weight: 900;
   border-radius: 5em;
+}
+
+@media screen and (width <= 1300px) {
+  .place-card {
+    grid-template-areas: "image image"
+                         "title title"
+                         "address address"
+                         "treatments treatments"
+                         "advantages advantages"
+                         "price button";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+
+  .place-card > .place-card__image > img {
+    height: 250px;
+  }
+}
+
+@media screen and (width <= 500px) {
+  .place-card > .place-card__advantages {
+    flex-direction: column;
+  }
+
+  .place-card {
+    grid-template-areas: "image"
+                         "title"
+                         "address"
+                         "treatments"
+                         "advantages"
+                         "price"
+                         "button";
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .place-card > .place-card__button > button {
+    width: 100%;
+  }
 }
