@@ -68,3 +68,19 @@
   border: none;
   border-radius: 5em;
 }
+
+@media screen and (width <= 900px) {
+  .filter {
+    display: none;
+  }
+
+  .catalog > .catalog__body > .catalog__body__list {
+    width: 100%;
+  }
+}
+
+@media screen and (width <= 700px) {
+  .catalog {
+    margin: 2em 3em;
+  }
+}
