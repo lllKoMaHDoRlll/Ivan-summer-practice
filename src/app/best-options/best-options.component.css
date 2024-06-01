@@ -31,3 +31,31 @@
 .best-options > .best-options__content > .best-options__content__feedback-form {
   flex: 30% 0;
 }
+
+@media screen and (width <= 1300px) {
+  .best-options > .best-options__content > .best-options__content__options {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (width <= 1000px) {
+  .best-options > .best-options__content > .best-options__content__options {
+    grid-template-columns: 1fr;
+  }
+
+  .best-options > .best-options__content {
+    flex-direction: column;
+  }
+
+  .best-options > .best-options__content > .best-options__content__feedback-form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (width <= 700px) {
+  .best-options {
+    padding: 0 4em;
+  }
+
+
+}
