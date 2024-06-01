@@ -7,6 +7,7 @@
   --accent-color: #FA5B03;
   --primary-color: #4DACB8;
   --primary-dark-color: #245257;
+  font-size: calc(10px + .4vw);
 }
 
 * {
