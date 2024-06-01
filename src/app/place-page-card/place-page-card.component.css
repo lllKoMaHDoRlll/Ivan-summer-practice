@@ -257,4 +257,103 @@
   margin-top: 3em;
 }
 
+@media screen and (width <=1300px) {
+  .place-card > .place-card__body {
+    display: grid;
+    grid-template-areas: "gallery"
+                         "description"
+                         "meta-data"
+                         "feedback-form";
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+  }
 
+  .meta-data > .meta-data__location > img {
+    width: 400px;
+  }
+
+  .place-card > .place-card__body > .place-card__body__feedback-form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (width <= 900px) {
+  .place-card > .place-card__body {
+    grid-template-columns: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery > .gallery__main {
+    grid-column: 1 / 3;
+  }
+
+  .gallery > .gallery__thumb:nth-child(3) {
+    display: none;
+  }
+
+  .tabs > .tabs__titles {
+    gap: 1em;
+  }
+
+  .tabs > .tabs__titles > .tabs__titles__item {
+    font-size: 1rem;
+    padding: 1em;
+  }
+
+  .tabs > .tabs__bodies > .tabs__bodies__item {
+    padding: 1em 0;
+  }
+
+  .room-card {
+    padding: 1em 0;
+    grid-template-areas: "image image"
+                       "title title"
+                       "description description"
+                       "services services"
+                       "advantages advantages"
+                       "persons-amount button";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: unset;
+    row-gap: 1em;
+  }
+}
+
+@media screen and (width <= 700px) {
+  .place-card {
+    margin: 2em 4em;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr ;
+  }
+
+  .gallery > .gallery__thumb {
+    display: none;
+  }
+
+  .meta-data > .meta-data__location > img {
+    width: 100%;
+  }
+}
+
+@media screen and (width <= 500px) {
+  .room-card {
+    grid-template-areas: "image"
+                       "title"
+                       "description"
+                       "services"
+                       "advantages"
+                       "persons-amount"
+                       "button";
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    row-gap: 1em;
+  }
+
+  .room-card > .room-card__advantages {
+    flex-direction: column;
+  }
+}
