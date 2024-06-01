@@ -38,4 +38,15 @@
   background-color: var(--accent-color);
 }
 
+@media screen and (width <= 700px) {
+  .news {
+    margin: 0 3em;
+  }
+}
 
+@media screen and (width <= 600px) {
+  .news > .news__list {
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+  }
+}
